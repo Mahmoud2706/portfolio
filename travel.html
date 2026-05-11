@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -15,7 +15,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,20 +25,22 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <script src="https://unpkg.com/i18next@21.6.10/i18next.min.js"></script>
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://mahmoud2706.github.io/portfolio/index.html">
-<meta property="og:title" content="Mahmoud Refaat | Full Stack Laravel Developer">
-<meta property="og:description" content="Full Stack Laravel Developer specialized in building secure, scalable, and high-performance web applications.">
-<meta property="og:image" content="https://mahmoud2706.github.io/portfolio/assets/img/person/logo4.PNG">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mahmoud2706.github.io/portfolio/index.html">
+  <meta property="og:title" content="Mahmoud Refaat | Full Stack Laravel Developer">
+  <meta property="og:description"
+    content="Full Stack Laravel Developer specialized in building secure, scalable, and high-performance web applications.">
+  <meta property="og:image" content="https://mahmoud2706.github.io/portfolio/assets/img/person/logo4.PNG">
 
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://mahmoud2706.github.io/portfolio/index.html">
-<meta property="twitter:title" content="Mahmoud Refaat | Full Stack Laravel Developer">
-<meta property="twitter:description" content="Full Stack Laravel Developer specialized in building secure, scalable, and high-performance web applications.">
-<meta property="twitter:image" content="https://mahmoud2706.github.io/portfolio/assets/img/person/logo4.PNG">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mahmoud2706.github.io/portfolio/index.html">
+  <meta property="twitter:title" content="Mahmoud Refaat | Full Stack Laravel Developer">
+  <meta property="twitter:description"
+    content="Full Stack Laravel Developer specialized in building secure, scalable, and high-performance web applications.">
+  <meta property="twitter:image" content="https://mahmoud2706.github.io/portfolio/assets/img/person/logo4.PNG">
   <!-- =======================================================
   * Template Name: Craftivo
   * Template URL: https://bootstrapmade.com/craftivo-bootstrap-portfolio-template/
@@ -45,292 +49,474 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-  <body class="portfolio-details-page">
 
-    <!-- HEADER -->
-    <header id="header" class="header d-flex align-items-center sticky-top">
-      <div class="container-fluid container-xl d-flex align-items-center">
-        <a href="index.html">
-          <img
-            style="height: 50px"
-            src="assets/img/person/Capture7-removebg-preview.png"
-            alt="Logo"
-          />
-        </a>
-      </div>
-    </header>
+<body class="portfolio-details-page">
 
-    <main class="main">
+  <!-- HEADER -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl d-flex align-items-center">
+      <a href="index.html">
+        <img style="height: 50px" src="assets/img/person/Capture7-removebg-preview.png" alt="Logo" />
+      </a>
+      <li class="nav-item">
+        <button id="lang-toggler" class="lang-btn" onclick="toggleLanguage()">
+          <i class="bi bi-translate"></i>
+          <span id="lang-text">العربية</span> </button>
+      </li>
+    </div>
+  </header>
 
-      <!-- TITLE -->
-      <div class="page-title light-background">
-        <div class="container">
-          <h1>LTH Travel - A comprehensive travel booking platform</h1>
-        </div>
-      </div>
+<main class="main">
 
-      <!-- DETAILS -->
+  <!-- TITLE -->
+  <div class="page-title light-background">
+    <div class="container">
+      <h1 data-i18n="project_title"></h1>
+    </div>
+  </div>
+
+  <!-- DETAILS -->
   <section class="portfolio-details section">
-        <div class="container">
-          <div class="row gy-5">
+    <div class="container">
+      <div class="row gy-5">
 
-            <div class="col-lg-8">
-             <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 4000
-                  },
-                  "slidesPerView": 1,
-                  "spaceBetween": 0,
-                  "effect": "fade",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
+        <div class="col-lg-8">
+
+          <!-- SLIDER -->
+          <div class="portfolio-details-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": { "delay": 4000 },
+                "slidesPerView": 1,
+                "effect": "fade",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
                 }
-              </script>
-              <div class="swiper-wrapper">
+              }
+            </script>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/travel2.png" alt="Travel Platform Interface" class="img-fluid">
-                </div>
+            <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/travel3.png" alt="Booking Process" class="img-fluid">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/travel4.png" alt="Destination View" class="img-fluid">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/travel5.png" alt="Itinerary Management" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/travel6.png" alt="Mobile View" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/travel7.png" alt="Admin Dashboard" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/travel8.png" alt="Payment Gateway" class="img-fluid">
-                </div>
-
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/travel2.png" class="img-fluid">
               </div>
-              <div class="swiper-pagination"></div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/travel3.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/travel4.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/travel5.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/travel6.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/travel7.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/travel8.png" class="img-fluid">
+              </div>
+
             </div>
 
-              <div class="portfolio-content mt-4" dir="rtl">
+            <div class="swiper-pagination"></div>
+          </div>
 
-                <h2>منصة حجوزات سياحية متكاملة: حوّل زوار موقعك إلى مسافرين دائمين</h2>
+          <!-- CONTENT -->
+          <div class="portfolio-content mt-4">
 
-                <div class="meta-info mb-4">
-                  <span><i class="bi bi-calendar"></i> 2025</span>
-                  <span><i class="bi bi-tag"></i> TravelTech / SaaS</span>
-                </div>
+            <h2 data-i18n="project_heading"></h2>
 
-                <h3>1. واجهة بصرية ملهمة (Immersive UI) وتجربة حجز سلسة</h3>
-                <p>
-                  <strong>تصميم بانورامي ملهم:</strong> واجهة تركز على الجاذبية البصرية باستخدام صور وفيديوهات عالية الدقة للوجهات السياحية، مما يثير شغف العميل للسفر منذ اللحظة الأولى.
-                  <br>
-                  <strong>محرك بحث سياحي متقدم:</strong> فلاتر بحث ذكية وسريعة تتيح للعميل البحث بـ (الوجهة، تاريخ السفر، الميزانية، أو نوع الرحلة كـ "شهر عسل" أو "عائلية") مع ظهور النتائج فوراً.
-                  <br>
-                  <strong>تطبيق ويب (PWA) صديق للموبايل:</strong> صممنا تجربة تصفح فائقة السرعة تتيح للعميل استعراض البرامج وحجز رحلته بسهولة من أي جهاز.
-                </p>
-
-                <h3>2. إدارة متقدمة للرحلات والبرامج السياحية (Itinerary Management)</h3>
-                <ul>
-                  <li><strong>برامج تفصيلية (يوم بيوم):</strong> عرض جدول الرحلة بشكل زمني تفاعلي يتضمن الفنادق، المزارات، وأوقات التحرك.</li>
-                  <li><strong>تسعير ديناميكي ذكي:</strong> نظام متطور لحساب التكلفة تلقائياً بناءً على عدد الأفراد ونوع الغرفة مع تعديل الأسعار آلياً حسب المواسم (High/Low Season).</li>
-                  <li><strong>إدارة التوفر والمقاعد:</strong> ربط مباشر بعدد المقاعد المتاحة، مع إغلاق الحجز تلقائياً عند اكتمال العدد (Sold Out).</li>
-                </ul>
-
-                <h3>3. حلول الدفع الآمنة والمرونة المالية</h3>
-                <p>
-                  دعم شامل لبوابات الدفع العالمية والمحلية (Apple Pay، بطاقات ائتمانية). يتضمن النظام ميزة حيوية تتيح للعميل حجز مقعده بدفع <strong>مبلغ مبدئي (عربون)</strong>، مع إمكانية سداد باقي المبلغ لاحقاً، بالإضافة إلى ميزة <strong>تعدد العملات التلقائي</strong> لزيادة معدلات التحويل.
-                </p>
-
-                <h3>4. أدوات التسويق السياحي ومضاعفة الحجوزات</h3>
-                <ul>
-                  <li><strong>نظام التقييمات والتجارب (Reviews):</strong> عرض تقييمات حقيقية وصور المسافرين السابقين لزيادة الثقة والمصداقية (Social Proof).</li>
-                  <li><strong>عروض الحجز المبكر (Early Bird):</strong> إنشاء خصومات ذكية بوقت محدد تظهر كعداد تنازلي لتحفيز العملاء.</li>
-                  <li><strong>تهيئة محركات البحث (Travel SEO):</strong> بنية برمجية مصممة لتصدر نتائج جوجل في الكلمات البحثية الهامة.</li>
-                </ul>
-
-                <h3>5. لوحة تحكم تشغيلية ومرونة الإدارة</h3>
-                <p>
-                  إصدار <strong>قسائم الحجز (Vouchers) آلياً</strong> بـ (QR Code)، وإدارة قوائم المسافرين (Passenger Lists) وتصديرها بضغطة زر، مع ربط النظام لإرسال <strong>إشعارات واتساب وبريد إلكتروني</strong> تلقائية للعملاء لتأكيد الحجز أو التذكير بموعد الرحلة.
-                </p>
-
-              </div>
+            <div class="meta-info mb-4">
+              <span><i class="bi bi-calendar"></i> 2025</span>
+              <span><i class="bi bi-tag"></i> <span data-i18n="project_category"></span></span>
             </div>
 
-            <div class="col-lg-4">
-              <div class="sidebar">
+            <h3 data-i18n="section_ui_title"></h3>
+            <p data-i18n="section_ui_text"></p>
 
-                <div class="info-card">
-                  <h3>Project Details</h3>
+            <h3 data-i18n="section_itinerary_title"></h3>
+            <ul>
+              <li data-i18n="itinerary_1"></li>
+              <li data-i18n="itinerary_2"></li>
+              <li data-i18n="itinerary_3"></li>
+            </ul>
 
-                  <div class="info-item">
-                    <span class="label">Client</span>
-                    <span class="value">شركات السياحة والسفر</span>
-                  </div>
+            <h3 data-i18n="section_payment_title"></h3>
+            <p data-i18n="section_payment_text"></p>
 
-                  <div class="info-item">
-                    <span class="label">Category</span>
-                    <span class="value">منصة حجوزات / TravelTech</span>
-                  </div>
+            <h3 data-i18n="section_marketing_title"></h3>
+            <ul>
+              <li data-i18n="marketing_1"></li>
+              <li data-i18n="marketing_2"></li>
+              <li data-i18n="marketing_3"></li>
+            </ul>
 
-                  <div class="info-item">
-                    <span class="label">Year of Development</span>
-                    <span class="value">2025</span>
-                  </div>
+            <h3 data-i18n="section_admin_title"></h3>
+            <p data-i18n="section_admin_text"></p>
 
-                  <div class="info-item">
-                    <span class="label">Tech</span>
-                    <span class="value">PWA, Dynamic Pricing, SEO</span>
-                  </div>
+          </div>
 
-                  <a href="https://lthlivethehistory.com/" target="_blank" class="btn-primary w-100 text-center mt-3">
-                  View Live Project
-                  </a>
+        </div>
 
-                </div>
+        <!-- SIDEBAR -->
+        <div class="col-lg-4">
+          <div class="sidebar">
 
+            <div class="info-card">
+
+              <h3 data-i18n="details_title"></h3>
+
+              <div class="info-item">
+                <span class="label" data-i18n="client"></span>
+                <span class="value" data-i18n="client_value"></span>
               </div>
+
+              <div class="info-item">
+                <span class="label" data-i18n="category"></span>
+                <span class="value" data-i18n="category_value"></span>
+              </div>
+
+              <div class="info-item">
+                <span class="label" data-i18n="year"></span>
+                <span class="value">2025</span>
+              </div>
+
+              <div class="info-item">
+                <span class="label" data-i18n="tech"></span>
+                <span class="value">TravelTech / PWA / SEO</span>
+              </div>
+
+              <a href="https://lthlivethehistory.com/" target="_blank"
+                 class="btn-primary w-100 text-center mt-3"
+                 data-i18n="view_project">
+              </a>
+
             </div>
 
           </div>
         </div>
-      </section>
 
-    </main>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 
-    <footer id="footer" class="footer">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <!-- ABOUT -->
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <span class="sitename">Mahmoud Refaat</span> -->
-              <img
-                style="height: 50px"
-                src="assets/img/person/Capture7-removebg-preview.png"
-                alt="MR Code Logo"
-                loading="lazy"
-              />
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- ABOUT -->
+        <div class="col-lg-5 col-md-12 footer-about">
+
+          <a href="index.html" class="logo d-flex align-items-center">
+
+            <img style="height: 50px;" src="assets/img/person/Capture7-removebg-preview.png" alt="MR Code Logo"
+              loading="lazy">
+
+          </a>
+
+          <p data-i18n="footer_about_text">
+            Full Stack Laravel Developer specialized in building secure,
+            scalable, and high-performance web applications using PHP,
+            Laravel, MySQL, and modern frontend technologies.
+          </p>
+
+          <div class="social-links d-flex mt-4">
+
+            <a target="_blank" href="https://www.facebook.com/share/1E5BPVQEf5/">
+              <i class="bi bi-facebook"></i>
             </a>
 
-            <p>
-              Full Stack Laravel Developer specialized in building secure,
-              scalable, and high-performance web applications using PHP,
-              Laravel, MySQL, and modern frontend technologies.
-            </p>
+            <a target="_blank"
+              href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+              <i class="bi bi-linkedin"></i>
+            </a>
 
-            <div class="social-links d-flex mt-4">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/share/1E5BPVQEf5/"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <!-- <a href="#"><i class="bi bi-instagram"></i></a> -->
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                ><i class="bi bi-linkedin"></i
-              ></a>
+            <a href="https://github.com/Mahmoud2706" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
 
-              <a href="https://github.com/Mahmoud2706" target="_blank">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="https://wa.me/201001679091" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </div>
+            <a href="https://wa.me/201001679091" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+
           </div>
 
-          <!-- LINKS -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html#hero">Home</a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="index.html#resume">Summary</a></li>
-              <li><a href="index.html#services">Services</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- SERVICES -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Backend Development</a></li>
-              <li><a href="#">API Development</a></li>
-              <li><a href="#">Database Design</a></li>
-              <li><a href="#">Performance Optimization</a></li>
-            </ul>
-          </div>
-
-          <!-- CONTACT -->
-          <div
-            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-          >
-            <h4>Contact</h4>
-
-            <p>Beni Suef, Egypt 🇪🇬</p>
-            <p>Available for Freelance Work</p>
-            <p>Remote / Worldwide</p>
-
-            <p class="mt-4">
-              <strong>Phone:</strong> <span>+20 100 167 9091</span>
-            </p>
-
-            <p><strong>Email:</strong> <span>mahmudrefaat7@gmail.com</span></p>
-          </div>
         </div>
+
+        <!-- LINKS -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_navigation_title">Navigation</h4>
+
+          <ul>
+            <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#resume" data-i18n="nav_resume">Summary</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+
+        </div>
+
+        <!-- SERVICES -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_services_title">Services</h4>
+
+          <ul>
+            <li><a data-i18n="service_web">Web Development</a></li>
+            <li><a data-i18n="service_backend">Backend Development</a></li>
+            <li><a data-i18n="service_api">API Development</a></li>
+            <li><a data-i18n="service_database">Database Design</a></li>
+            <li><a data-i18n="service_optimization">Performance
+                Optimization</a></li>
+          </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+
+          <p data-i18n="footer_location">Beni Suef, Egypt 🇪🇬</p>
+          <p data-i18n="footer_status">Available for Freelance Work</p>
+          <p data-i18n="footer_scope">Remote / Worldwide</p>
+
+          <p class="mt-4">
+            <strong data-i18n="footer_phone_label">Phone:</strong>
+            <!-- <span>+20 100 167 9091</span> -->
+          </p>
+
+          <p>
+            <strong data-i18n="footer_email_label">Email:</strong>
+            <span>mahmudrefaat7@gmail.com</span>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="container copyright text-center mt-4">
+
+      <p>
+        © <span>2026</span>
+        <strong class="px-1 sitename" data-i18n="Mahmoud_Refaat">Mahmoud
+          Refaat</strong>
+        <span data-i18n="footer_rights">All Rights Reserved</span>
+      </p>
+
+      <div class="credits" data-i18n="footer_credits">
+        Built with ❤️
       </div>
 
-      <!-- COPYRIGHT -->
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>2026</span>
-          <strong class="px-1 sitename">Mahmoud Refaat</strong>
-          <span>All Rights Reserved</span>
-        </p>
+    </div>
 
-        <div class="credits">Built with ❤️</div>
-      </div>
-    </footer>
-    <!-- Scroll Top -->
-    <a
-      href="#"
-      id="scroll-top"
-      class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+  </footer>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/typed.js/typed.umd.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const resources = {
+      en: {
+        translation: {
+          project_title: "LTH Travel",
+project_heading: "LTH Travel – Smart Travel Booking Platform",
+project_category: "TravelTech / SaaS",
 
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-  </body>
+section_ui_title: "1. Immersive UI & Seamless Booking Experience",
+section_ui_text: "A visually rich interface designed to inspire travel with high-quality visuals and smart search filters.",
+
+section_itinerary_title: "2. Advanced Itinerary Management",
+itinerary_1: "Day-by-day travel schedules with interactive timeline",
+itinerary_2: "Dynamic pricing based on season and group size",
+itinerary_3: "Real-time seat availability and auto sold-out system",
+
+section_payment_title: "3. Secure Payment Solutions",
+section_payment_text: "Supports global payment gateways with flexible deposit booking and multi-currency support.",
+
+section_marketing_title: "4. Marketing & Booking Growth Tools",
+marketing_1: "Customer reviews and social proof system",
+marketing_2: "Early bird countdown discounts",
+marketing_3: "SEO optimized travel structure",
+
+section_admin_title: "5. Admin Dashboard",
+section_admin_text: "Automated vouchers, passenger lists, WhatsApp/email notifications.",
+
+details_title: "Project Details",
+client: "Client",
+client_value: "Travel Companies",
+category: "Category",
+category_value: "Travel Booking Platform",
+year: "Year",
+tech: "Technology",
+view_project: "View Live Project",
+          btn_lang_text: "العربية",
+          "nav_home": "Home",
+          "nav_about": "About",
+          "nav_resume": "Summary",
+          "nav_services": "Services",
+          "nav_contact": "Contact",
+          nav_resume: "Summary",
+          Mahmoud_Refaat: "Mahmoud Refaat",
+          footer_about_text: "Full Stack Laravel Developer specialized in building secure and scalable web applications.",
+          footer_navigation_title: "Navigation",
+          footer_services_title: "Services",
+          service_web: "Web Development",
+          service_backend: "Backend Development",
+          service_api: "API Development",
+          service_database: "Database Design",
+          service_optimization: "Performance Optimization",
+          footer_contact_title: "Contact",
+          footer_location: "Beni Suef, Egypt 🇪🇬",
+          footer_status: "Available for Freelance Work",
+          footer_scope: "Remote / Worldwide",
+          "footer_phone_label": "Phone : +20 100 167 9091",
+          footer_email_label: "Email:",
+          footer_rights: "All Rights Reserved",
+          footer_credits: "Built with ❤️"
+        }
+      },
+
+      ar: {
+        translation: {
+          btn_lang_text: "English",
+          project_title: "إل تي إتش للسفر",
+project_heading: "منصة حجوزات سياحية ذكية ومتقدمة",
+project_category: "تكنولوجيا السفر / SaaS",
+
+section_ui_title: "1. واجهة تفاعلية وتجربة حجز سلسة",
+section_ui_text: "واجهة بصرية جذابة تهدف لإلهام المستخدمين للسفر من خلال صور وفلترة ذكية.",
+
+section_itinerary_title: "2. إدارة متقدمة للرحلات",
+itinerary_1: "جدول يومي تفاعلي للرحلات",
+itinerary_2: "تسعير ديناميكي حسب الموسم وعدد الأفراد",
+itinerary_3: "تحديث فوري لعدد المقاعد المتاحة",
+
+section_payment_title: "3. حلول دفع آمنة",
+section_payment_text: "دعم بوابات الدفع العالمية مع نظام العربون والعملات المتعددة.",
+
+section_marketing_title: "4. أدوات تسويق قوية",
+marketing_1: "نظام تقييمات العملاء",
+marketing_2: "عروض العد التنازلي",
+marketing_3: "تهيئة قوية لمحركات البحث",
+
+section_admin_title: "5. لوحة تحكم متكاملة",
+section_admin_text: "إصدار تذاكر تلقائية، إدارة المسافرين، وإشعارات واتساب وإيميل.",
+
+details_title: "تفاصيل المشروع",
+client: "العميل",
+client_value: "شركات السياحة",
+category: "الفئة",
+category_value: "منصة حجوزات سياحية",
+year: "السنة",
+tech: "التقنيات",
+view_project: "عرض المشروع",
+          footer_about_text: "مطور Full Stack Laravel متخصص في بناء تطبيقات ويب قوية وقابلة للتوسع.",
+          footer_navigation_title: "التنقل",
+          footer_services_title: "الخدمات",
+          service_web: "تطوير المواقع",
+          service_backend: "تطوير الباك إند",
+          service_api: "تطوير API",
+          service_database: "تصميم قواعد البيانات",
+          service_optimization: "تحسين الأداء",
+          Mahmoud_Refaat: "محمود رفعت",
+          nav_home: "الرئيسية",
+          nav_about: "من أنا",
+          nav_summary: "ملخص",
+          nav_services: "خدماتي",
+          nav_portfolio: "أعمالي",
+          nav_resume: "ملخص",
+          nav_contact: "تواصل معي",
+          footer_contact_title: "تواصل",
+          footer_location: "بني سويف، مصر 🇪🇬",
+          footer_status: "متاح للعمل الحر",
+          footer_scope: "عن بعد / حول العالم",
+          "footer_phone_label": "الهاتف :9091 167   20100 +",
+          footer_email_label: "البريد الإلكتروني:",
+          footer_rights: "جميع الحقوق محفوظة",
+          footer_credits: "تم التطوير بـ ❤️"
+        }
+      }
+    };
+
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      i18next.init({
+        lng: currentLang,
+        resources
+      }, () => {
+        updateUI();
+      });
+    });
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "ar" : "en";
+
+      i18next.changeLanguage(currentLang, () => {
+        localStorage.setItem("lang", currentLang);
+        updateUI();
+      });
+    }
+
+    function updateUI() {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+
+        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+          el.placeholder = i18next.t(key);
+        } else {
+          el.innerHTML = i18next.t(key);
+        }
+      });
+
+      // مهم جدًا 👇 تحديث زر اللغة
+      const langText = document.getElementById("lang-text");
+      if (langText) {
+        langText.innerText = i18next.t("btn_lang_text");
+      }
+
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+    }
+  </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>

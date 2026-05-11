@@ -23,7 +23,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  <script src="https://unpkg.com/i18next@21.6.10/i18next.min.js"></script>
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <meta property="og:type" content="website">
@@ -57,6 +57,11 @@
             alt="Logo"
           />
         </a>
+        <li class="nav-item">
+        <button id="lang-toggler" class="lang-btn" onclick="toggleLanguage()">
+          <i class="bi bi-translate"></i>
+          <span id="lang-text">العربية</span> </button>
+      </li>
       </div>
     </header>
 
@@ -65,7 +70,7 @@
   <!-- TITLE -->
   <div class="page-title light-background">
     <div class="container">
-      <h1>Gala Store</h1>
+      <h1 data-i18n="project_title">Gala Store</h1>
     </div>
   </div>
 
@@ -82,9 +87,7 @@
               {
                 "loop": true,
                 "speed": 600,
-                "autoplay": {
-                  "delay": 4000
-                },
+                "autoplay": { "delay": 4000 },
                 "slidesPerView": 1,
                 "spaceBetween": 0,
                 "effect": "fade",
@@ -99,25 +102,22 @@
             <div class="swiper-wrapper">
 
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/gala1.PNG" alt="Portfolio Image" class="img-fluid">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/gala2.PNG" alt="Portfolio Image" class="img-fluid">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/gala3.PNG" alt="Portfolio Image" class="img-fluid">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/gala4.PNG" alt="Portfolio Image" class="img-fluid">
+                <img src="assets/img/portfolio/gala1.PNG" class="img-fluid">
               </div>
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/gala5.PNG" alt="Portfolio Image" class="img-fluid">
+                <img src="assets/img/portfolio/gala2.PNG" class="img-fluid">
               </div>
               <div class="swiper-slide">
-                <img src="assets/img/portfolio/gala6.PNG" alt="Portfolio Image" class="img-fluid">
+                <img src="assets/img/portfolio/gala3.PNG" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/gala4.PNG" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/gala5.PNG" class="img-fluid">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/gala6.PNG" class="img-fluid">
               </div>
 
             </div>
@@ -128,60 +128,43 @@
           <!-- CONTENT -->
           <div class="portfolio-content mt-4">
 
-            <h2>Gala Store – E-Commerce Platform</h2>
+            <h2 data-i18n="project_full_title">Gala Store – E-Commerce Platform</h2>
 
             <div class="meta-info">
               <span><i class="bi bi-calendar"></i> 2026</span>
-              <span><i class="bi bi-tag"></i> E-Commerce / Web App</span>
+              <span><i class="bi bi-tag"></i> <span data-i18n="category"></span></span>
               <span><i class="bi bi-geo"></i> Global</span>
             </div>
 
-            <p>
-              نفخر بتقديم حلول برمجية متقدمة لإنشاء المتاجر الإلكترونية التي تجمع بين الأداء العالي والتصميم المبتكر.
-              كان مشروع <strong>Gala Store</strong> واحدًا من أبرز إنجازاتنا.
-            </p>
+            <p data-i18n="intro"></p>
 
-            <h3>Project Overview</h3>
-            <p>
-              تم تطوير متجر إلكتروني احترافي بالكامل باستخدام Laravel و Vue.js
-              لتقديم تجربة مستخدم سلسة وسريعة مع أداء عالي واستجابة فورية.
-            </p>
+            <h3 data-i18n="overview_title"></h3>
+            <p data-i18n="overview_text"></p>
 
-            <h3>Technologies Used</h3>
+            <h3 data-i18n="tech_title"></h3>
             <ul>
-              <li>Laravel Framework</li>
-              <li>Vue.js Frontend</li>
-              <li>MySQL Database</li>
-              <li>RESTful API Integration</li>
-              <li>Redis & Caching</li>
+              <li>Laravel</li>
+              <li>Vue.js</li>
+              <li>MySQL</li>
+              <li>REST API</li>
+              <li>Redis</li>
             </ul>
 
-            <h3>Key Features</h3>
+            <h3 data-i18n="features_title"></h3>
             <ul>
-              <li>متجر إلكتروني قابل للتخصيص بالكامل</li>
-              <li>دعم متعدد اللغات والعملات</li>
-              <li>تكامل مع بوابات الدفع الإلكترونية</li>
-              <li>نظام تتبع وإدارة الطلبات</li>
-              <li>تحسين SEO وأداء عالي السرعة</li>
-              <li>نظام إدارة المنتجات والمخزون</li>
+              <li data-i18n="feature_1"></li>
+              <li data-i18n="feature_2"></li>
+              <li data-i18n="feature_3"></li>
+              <li data-i18n="feature_4"></li>
+              <li data-i18n="feature_5"></li>
+              <li data-i18n="feature_6"></li>
             </ul>
 
-            <h3>Project Details</h3>
-            <p>
-              تم تصميم Gala Store ليكون منصة تجارة إلكترونية متكاملة تدعم التوسع،
-              مع واجهة حديثة باستخدام Vue.js ولوحة تحكم قوية لإدارة كل العمليات.
-            </p>
+            <h3 data-i18n="details_title"></h3>
+            <p data-i18n="details_text"></p>
 
-            <h3>Impact</h3>
-            <p>
-              ساعد المشروع في إطلاق متجر إلكتروني احترافي يعزز المبيعات
-              ويوفر تجربة تسوق سلسة وآمنة للعملاء.
-            </p>
-
-            <p>
-              💡 هل لديك مشروع مشابه وتبحث عن فريق محترف؟
-              نحن مستعدون لتطوير متجرك الإلكتروني بأحدث التقنيات.
-            </p>
+            <h3 data-i18n="impact_title"></h3>
+            <p data-i18n="impact_text"></p>
 
           </div>
         </div>
@@ -191,31 +174,31 @@
           <div class="sidebar">
 
             <div class="info-card">
-              <h3>Project Details</h3>
+
+              <h3 data-i18n="project_details">Project Details</h3>
 
               <div class="info-item">
-                <span class="label">Client</span>
+                <span class="label" data-i18n="client"></span>
                 <span class="value">Gala Store</span>
               </div>
 
               <div class="info-item">
-                <span class="label">Category</span>
-                <span class="value">E-Commerce Platform</span>
+                <span class="label" data-i18n="category_label"></span>
+                <span class="value" data-i18n="category"></span>
               </div>
 
               <div class="info-item">
-                <span class="label">Year</span>
+                <span class="label" data-i18n="year"></span>
                 <span class="value">2026</span>
               </div>
 
               <div class="info-item">
-                <span class="label">Tech</span>
-                <span class="value">Laravel, Vue.js, MySQL</span>
+                <span class="label" data-i18n="tech_label"></span>
+                <span class="value">Laravel, Vue.js</span>
               </div>
 
-              <a href="https://gala-store.5starcode.site/" target="_blank" class="btn-primary">
-                View Project
-              </a>
+              <a href="https://gala-store.5starcode.site/" target="_blank"
+                 class="btn-primary" data-i18n="view_project"></a>
 
             </div>
 
@@ -229,103 +212,122 @@
 </main>
 
 
-    <footer id="footer" class="footer">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <!-- ABOUT -->
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <span class="sitename">Mahmoud Refaat</span> -->
-              <img
-                style="height: 50px"
-                src="assets/img/person/Capture7-removebg-preview.png"
-                alt="MR Code Logo"
-                loading="lazy"
-              />
+ <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- ABOUT -->
+        <div class="col-lg-5 col-md-12 footer-about">
+
+          <a href="index.html" class="logo d-flex align-items-center">
+
+            <img style="height: 50px;" src="assets/img/person/Capture7-removebg-preview.png" alt="MR Code Logo"
+              loading="lazy">
+
+          </a>
+
+          <p data-i18n="footer_about_text">
+            Full Stack Laravel Developer specialized in building secure,
+            scalable, and high-performance web applications using PHP,
+            Laravel, MySQL, and modern frontend technologies.
+          </p>
+
+          <div class="social-links d-flex mt-4">
+
+            <a target="_blank" href="https://www.facebook.com/share/1E5BPVQEf5/">
+              <i class="bi bi-facebook"></i>
             </a>
 
-            <p>
-              Full Stack Laravel Developer specialized in building secure,
-              scalable, and high-performance web applications using PHP,
-              Laravel, MySQL, and modern frontend technologies.
-            </p>
+            <a target="_blank"
+              href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+              <i class="bi bi-linkedin"></i>
+            </a>
 
-            <div class="social-links d-flex mt-4">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/share/1E5BPVQEf5/"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <!-- <a href="#"><i class="bi bi-instagram"></i></a> -->
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                ><i class="bi bi-linkedin"></i
-              ></a>
+            <a href="https://github.com/Mahmoud2706" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
 
-              <a href="https://github.com/Mahmoud2706" target="_blank">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="https://wa.me/201001679091" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </div>
+            <a href="https://wa.me/201001679091" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+
           </div>
 
-          <!-- LINKS -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html#hero">Home</a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="index.html#resume">Summary</a></li>
-              <li><a href="index.html#services">Services</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- SERVICES -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Backend Development</a></li>
-              <li><a href="#">API Development</a></li>
-              <li><a href="#">Database Design</a></li>
-              <li><a href="#">Performance Optimization</a></li>
-            </ul>
-          </div>
-
-          <!-- CONTACT -->
-          <div
-            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-          >
-            <h4>Contact</h4>
-
-            <p>Beni Suef, Egypt 🇪🇬</p>
-            <p>Available for Freelance Work</p>
-            <p>Remote / Worldwide</p>
-
-            <p class="mt-4">
-              <strong>Phone:</strong> <span>+20 100 167 9091</span>
-            </p>
-
-            <p><strong>Email:</strong> <span>mahmudrefaat7@gmail.com</span></p>
-          </div>
         </div>
+
+        <!-- LINKS -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_navigation_title">Navigation</h4>
+
+          <ul>
+            <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#resume" data-i18n="nav_resume">Summary</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+
+        </div>
+
+        <!-- SERVICES -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_services_title">Services</h4>
+
+          <ul>
+            <li><a data-i18n="service_web">Web Development</a></li>
+            <li><a data-i18n="service_backend">Backend Development</a></li>
+            <li><a data-i18n="service_api">API Development</a></li>
+            <li><a data-i18n="service_database">Database Design</a></li>
+            <li><a data-i18n="service_optimization">Performance
+                Optimization</a></li>
+          </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+
+          <p data-i18n="footer_location">Beni Suef, Egypt 🇪🇬</p>
+          <p data-i18n="footer_status">Available for Freelance Work</p>
+          <p data-i18n="footer_scope">Remote / Worldwide</p>
+
+          <p class="mt-4">
+            <strong data-i18n="footer_phone_label">Phone:</strong>
+            <!-- <span>+20 100 167 9091</span> -->
+          </p>
+
+          <p>
+            <strong data-i18n="footer_email_label">Email:</strong>
+            <span>mahmudrefaat7@gmail.com</span>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="container copyright text-center mt-4">
+
+      <p>
+        © <span>2026</span>
+        <strong class="px-1 sitename" data-i18n="Mahmoud_Refaat">Mahmoud
+          Refaat</strong>
+        <span data-i18n="footer_rights">All Rights Reserved</span>
+      </p>
+
+      <div class="credits" data-i18n="footer_credits">
+        Built with ❤️
       </div>
 
-      <!-- COPYRIGHT -->
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>2026</span>
-          <strong class="px-1 sitename">Mahmoud Refaat</strong>
-          <span>All Rights Reserved</span>
-        </p>
+    </div>
 
-        <div class="credits">Built with ❤️</div>
-      </div>
-    </footer>
+  </footer>
     <!-- Scroll Top -->
     <a
       href="#"
@@ -336,7 +338,180 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+  <script>
+    const resources = {
+      en: {
+        translation: {
+          btn_lang_text: "العربية",
+          project_title: "Gala Store",
+    project_full_title: "Gala Store – E-Commerce Platform",
 
+    category: "E-Commerce / Web App",
+    category_label: "Category",
+    year: "Year",
+    tech_label: "Tech",
+
+    intro:
+      "A modern e-commerce platform built with Laravel and Vue.js for high performance and smooth user experience.",
+
+    overview_title: "Project Overview",
+    overview_text:
+      "Gala Store is a full e-commerce system with fast performance, modern UI, and scalable architecture.",
+
+    tech_title: "Technologies Used",
+
+    features_title: "Key Features",
+    feature_1: "Fully customizable online store",
+    feature_2: "Multi-language & multi-currency support",
+    feature_3: "Payment gateway integration",
+    feature_4: "Order tracking system",
+    feature_5: "SEO optimized performance",
+    feature_6: "Product & inventory management",
+
+    details_title: "Project Details",
+    details_text:
+      "Gala Store was designed as a scalable e-commerce platform with a powerful admin dashboard.",
+
+    impact_title: "Impact",
+    impact_text:
+      "The project helped launch a professional online store with higher sales and better user experience.",
+
+    client: "Client",
+    view_project: "View Project",
+          "nav_home": "Home",
+          "nav_about": "About",
+          "nav_resume": "Summary",
+          "nav_services": "Services",
+          "nav_contact": "Contact",
+          nav_resume: "Summary",
+          Mahmoud_Refaat: "Mahmoud Refaat",
+          footer_about_text: "Full Stack Laravel Developer specialized in building secure and scalable web applications.",
+          footer_navigation_title: "Navigation",
+          footer_services_title: "Services",
+          service_web: "Web Development",
+          service_backend: "Backend Development",
+          service_api: "API Development",
+          service_database: "Database Design",
+          service_optimization: "Performance Optimization",
+          footer_contact_title: "Contact",
+          footer_location: "Beni Suef, Egypt 🇪🇬",
+          footer_status: "Available for Freelance Work",
+          footer_scope: "Remote / Worldwide",
+          "footer_phone_label": "Phone : +20 100 167 9091",
+          footer_email_label: "Email:",
+          footer_rights: "All Rights Reserved",
+          footer_credits: "Built with ❤️"
+        }
+      },
+
+      ar: {
+        translation: {
+          btn_lang_text: "English",
+           project_title: "جالا ستور",
+    project_full_title: "جالا ستور – متجر إلكتروني",
+
+    category: "تجارة إلكترونية / تطبيق ويب",
+    category_label: "الفئة",
+    year: "السنة",
+    tech_label: "التقنيات",
+
+    intro:
+      "منصة تجارة إلكترونية حديثة مبنية بأداء عالي وتجربة مستخدم سلسة.",
+
+    overview_title: "نظرة عامة",
+    overview_text:
+      "جالا ستور نظام متجر إلكتروني كامل يتميز بالسرعة والتوسع وسهولة الاستخدام.",
+
+    tech_title: "التقنيات المستخدمة",
+project_details: "تفاصيل المشروع",
+    features_title: "المميزات",
+    feature_1: "متجر قابل للتخصيص بالكامل",
+    feature_2: "دعم اللغات والعملات",
+    feature_3: "بوابات الدفع",
+    feature_4: "تتبع الطلبات",
+    feature_5: "تحسين SEO",
+    feature_6: "إدارة المنتجات",
+
+    details_title: "تفاصيل المشروع",
+    details_text:
+      "تم تصميم جالا ستور كنظام قابل للتوسع مع لوحة تحكم قوية للإدارة.",
+
+    impact_title: "الأثر",
+    impact_text:
+      "ساعد المشروع في إطلاق متجر احترافي وزيادة المبيعات وتحسين تجربة المستخدم.",
+
+    client: "العميل",
+    view_project: "عرض المشروع",  
+
+          footer_about_text: "مطور Full Stack Laravel متخصص في بناء تطبيقات ويب قوية وقابلة للتوسع.",
+          footer_navigation_title: "التنقل",
+          footer_services_title: "الخدمات",
+          service_web: "تطوير المواقع",
+          service_backend: "تطوير الباك إند",
+          service_api: "تطوير API",
+          service_database: "تصميم قواعد البيانات",
+          service_optimization: "تحسين الأداء",
+          Mahmoud_Refaat: "محمود رفعت",
+          nav_home: "الرئيسية",
+          nav_about: "من أنا",
+          nav_summary: "ملخص",
+          nav_services: "خدماتي",
+          nav_portfolio: "أعمالي",
+          nav_resume: "ملخص",
+          nav_contact: "تواصل معي",
+          footer_contact_title: "تواصل",
+          footer_location: "بني سويف، مصر 🇪🇬",
+          footer_status: "متاح للعمل الحر",
+          footer_scope: "عن بعد / حول العالم",
+          "footer_phone_label": "الهاتف :9091 167   20100 +",
+          footer_email_label: "البريد الإلكتروني:",
+          footer_rights: "جميع الحقوق محفوظة",
+          footer_credits: "تم التطوير بـ ❤️"
+        }
+      }
+    };
+
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      i18next.init({
+        lng: currentLang,
+        resources
+      }, () => {
+        updateUI();
+      });
+    });
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "ar" : "en";
+
+      i18next.changeLanguage(currentLang, () => {
+        localStorage.setItem("lang", currentLang);
+        updateUI();
+      });
+    }
+
+    function updateUI() {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+
+        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+          el.placeholder = i18next.t(key);
+        } else {
+          el.innerHTML = i18next.t(key);
+        }
+      });
+
+      // مهم جدًا 👇 تحديث زر اللغة
+      const langText = document.getElementById("lang-text");
+      if (langText) {
+        langText.innerText = i18next.t("btn_lang_text");
+      }
+
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+    }
+  </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>

@@ -4239,3 +4239,57 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* ستايل زرار اللغة المخصص */
+.lang-btn {
+  background: rgba(255, 255, 255, 0.05); /* خلفية شفافة بسيطة */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 6px 15px;
+  border-radius: 50px; /* شكل بيضاوي يتماشى مع Get Started */
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.lang-btn i {
+  color: #e84545; /* نفس درجة اللون الأحمر اللي في موقعك */
+  font-size: 16px;
+}
+
+.lang-btn:hover {
+  background: #e84545; /* يتحول للأحمر عند الوقوف عليه */
+  border-color: #e84545;
+  color: #fff;
+}
+
+.lang-btn:hover i {
+  color: #fff; /* الأيقونة تتحول للأبيض عند الهوفر */
+}
+
+/* ضبط المسافة في الموبايل */
+@media (max-width: 991px) {
+  .lang-btn {
+    margin: 10px 0 10px 15px;
+    width: fit-content;
+  }
+}
+
+/* إجبار الهيدر يفضل بنظام اليسار لليمين دائماً */
+#header {
+    direction: ltr !important;
+}
+
+/* لو حابب زرار اللغة يفضل واخد مسافة مظبوطة جوه الهيدر الثابت */
+#header .lang-btn {
+    margin-left: 15px !important;
+    margin-right: 0 !important;
+}
+/* Fix RTL alignment for CTA button */
+html[dir="rtl"] .rtl-text-end {
+  text-align: left !important;
+}

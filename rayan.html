@@ -11,7 +11,7 @@
   <!-- Favicons -->
   <link href="assets/img/profile/mahmoud.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <script src="https://unpkg.com/i18next@21.6.10/i18next.min.js"></script>
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -57,260 +57,276 @@
             alt="Logo"
           />
         </a>
+        <li class="nav-item">
+        <button id="lang-toggler" class="lang-btn" onclick="toggleLanguage()">
+          <i class="bi bi-translate"></i>
+          <span id="lang-text">العربية</span> </button>
+      </li>
       </div>
     </header>
 
-    <main class="main">
+<main class="main">
 
-      <!-- TITLE -->
-      <div class="page-title light-background">
-        <div class="container">
-          <h1>Rayyan Exchange IQ</h1>
-        </div>
-      </div>
+  <!-- TITLE -->
+  <div class="page-title light-background">
+    <div class="container">
+      <h1 data-i18n="project_title">Rayyan Exchange IQ</h1>
+    </div>
+  </div>
 
-      <!-- DETAILS -->
-      <section class="portfolio-details section">
-        <div class="container">
-          <div class="row gy-5">
+  <!-- DETAILS -->
+  <section class="portfolio-details section">
+    <div class="container">
+      <div class="row gy-5">
 
-            <!-- SLIDER -->
-            <div class="col-lg-8">
-             <div class="portfolio-details-slider swiper init-swiper">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 4000
-                  },
-                  "slidesPerView": 1,
-                  "spaceBetween": 0,
-                  "effect": "fade",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
+        <!-- SLIDER -->
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper init-swiper">
+
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": { "delay": 4000 },
+                "slidesPerView": 1,
+                "spaceBetween": 0,
+                "effect": "fade",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
                 }
-              </script>
-              <div class="swiper-wrapper">
+              }
+            </script>
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/5.png" alt="Portfolio Image" class="img-fluid">
-                </div>
+            <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/2.png" alt="Portfolio Image" class="img-fluid">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/3.png" alt="Portfolio Image" class="img-fluid">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/4.png" alt="Portfolio Image" class="img-fluid">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/1.png" alt="Portfolio Image" class="img-fluid">
-                </div>
-
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/5.png" class="img-fluid">
               </div>
-              <div class="swiper-pagination"></div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/2.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/3.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/4.png" class="img-fluid">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/1.png" class="img-fluid">
+              </div>
+
             </div>
 
-              <!-- CONTENT -->
-              <div class="portfolio-content mt-4">
+            <div class="swiper-pagination"></div>
+          </div>
 
-                <h2>Rayyan Exchange IQ – Digital Exchange Platform</h2>
+          <!-- CONTENT -->
+          <div class="portfolio-content mt-4">
 
-                <div class="meta-info">
-                  <span><i class="bi bi-calendar"></i> 2025</span>
-                  <span><i class="bi bi-tag"></i> FinTech / Web App</span>
-                  <span><i class="bi bi-geo"></i> Iraq</span>
-                </div>
+            <h2 data-i18n="project_full_title">Rayyan Exchange IQ – Digital Exchange Platform</h2>
 
-                <p>
-                  مشروع <strong>ريان للصرافة (Rayyan Exchange IQ)</strong> هو منصة مالية إلكترونية
-                  متكاملة تهدف إلى تسهيل عمليات تحويل الأموال والصرافة داخل العراق وخارجه
-                  بطريقة آمنة وسريعة.
-                </p>
-
-                <h3>Project Overview</h3>
-                <p>
-                  تم تطوير المنصة لتوفير تجربة رقمية احترافية لإدارة التحويلات المالية،
-                  مع نظام إدارة أسعار العملات ولوحة تحكم متقدمة تسهّل على فريق العمل إدارة العمليات اليومية بكفاءة عالية.
-                </p>
-
-                <h3>Key Features</h3>
-                <ul>
-                  <li>نظام تحويل داخلي وخارجي للأموال</li>
-                  <li>تحديث فوري لأسعار العملات</li>
-                  <li>لوحة تحكم متكاملة للإدارة</li>
-                  <li>نظام إشعارات وتنبيهات للحركات المالية</li>
-                  <li>واجهة عربية سهلة الاستخدام</li>
-                  <li>دعم كامل للموبايل (Responsive Design)</li>
-                </ul>
-
-                <h3>Technologies Used</h3>
-                <ul>
-                  <li>Laravel Framework</li>
-                  <li>MySQL Database</li>
-                  <li>Bootstrap 5</li>
-                  <li>Blade Templates</li>
-                  <li>RESTful APIs</li>
-                  <li>Security & Validation Layer</li>
-                </ul>
-
-                <h3>Project Impact</h3>
-                <p>
-                  الموقع لا يقدّم فقط خدمة معلوماتية، بل منصة مالية متكاملة تساعد المستخدمين
-                  على تنفيذ معاملاتهم بسهولة وثقة، مع تحسين كبير في سرعة الإدارة والتحكم الداخلي.
-                </p>
-
-              </div>
+            <div class="meta-info">
+              <span><i class="bi bi-calendar"></i> 2025</span>
+              <span><i class="bi bi-tag"></i> <span data-i18n="category"></span></span>
+              <span><i class="bi bi-geo"></i> Iraq</span>
             </div>
 
-            <!-- SIDEBAR -->
-            <div class="col-lg-4">
-              <div class="sidebar">
+            <p data-i18n="intro"></p>
 
-                <div class="info-card">
-                  <h3>Project Details</h3>
+            <h3 data-i18n="overview_title"></h3>
+            <p data-i18n="overview_text"></p>
 
-                  <div class="info-item">
-                    <span class="label">Client</span>
-                    <span class="value">Rayyan Exchange IQ</span>
-                  </div>
+            <h3 data-i18n="features_title"></h3>
+            <ul>
+              <li data-i18n="feature_1"></li>
+              <li data-i18n="feature_2"></li>
+              <li data-i18n="feature_3"></li>
+              <li data-i18n="feature_4"></li>
+              <li data-i18n="feature_5"></li>
+              <li data-i18n="feature_6"></li>
+            </ul>
 
-                  <div class="info-item">
-                    <span class="label">Category</span>
-                    <span class="value">FinTech Platform</span>
-                  </div>
+            <h3 data-i18n="tech_title"></h3>
+            <ul>
+              <li>Laravel</li>
+              <li>MySQL</li>
+              <li>Bootstrap 5</li>
+              <li>Blade</li>
+              <li>REST API</li>
+              <li>Security Layer</li>
+            </ul>
 
-                  <div class="info-item">
-                    <span class="label">Year</span>
-                    <span class="value">2025</span>
-                  </div>
+            <h3 data-i18n="impact_title"></h3>
+            <p data-i18n="impact_text"></p>
 
-                  <div class="info-item">
-                    <span class="label">Tech</span>
-                    <span class="value">Laravel, MySQL, Bootstrap</span>
-                  </div>
+          </div>
+        </div>
 
-                  <a href="https://rayyanexiq.com/" target="_blank" class="btn-primary">
-                    View Live Project
-                  </a>
+        <!-- SIDEBAR -->
+        <div class="col-lg-4">
+          <div class="sidebar">
 
-                </div>
+            <div class="info-card">
 
+              <h3 data-i18n="project_details">Project Details</h3>
+
+              <div class="info-item">
+                <span class="label" data-i18n="client"></span>
+                <span class="value">Rayyan Exchange IQ</span>
               </div>
+
+              <div class="info-item">
+                <span class="label" data-i18n="category_label"></span>
+                <span class="value" data-i18n="category"></span>
+              </div>
+
+              <div class="info-item">
+                <span class="label" data-i18n="year"></span>
+                <span class="value">2025</span>
+              </div>
+
+              <div class="info-item">
+                <span class="label" data-i18n="tech_label"></span>
+                <span class="value">Laravel, MySQL, Bootstrap</span>
+              </div>
+
+              <a href="https://rayyanexiq.com/" target="_blank"
+                 class="btn-primary" data-i18n="view_project"></a>
+
             </div>
 
           </div>
         </div>
-      </section>
 
-    </main>
+      </div>
+    </div>
+  </section>
+
+</main>
 
 
-    <footer id="footer" class="footer">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <!-- ABOUT -->
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <span class="sitename">Mahmoud Refaat</span> -->
-              <img
-                style="height: 50px"
-                src="assets/img/person/Capture7-removebg-preview.png"
-                alt="MR Code Logo"
-                loading="lazy"
-              />
+ <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- ABOUT -->
+        <div class="col-lg-5 col-md-12 footer-about">
+
+          <a href="index.html" class="logo d-flex align-items-center">
+
+            <img style="height: 50px;" src="assets/img/person/Capture7-removebg-preview.png" alt="MR Code Logo"
+              loading="lazy">
+
+          </a>
+
+          <p data-i18n="footer_about_text">
+            Full Stack Laravel Developer specialized in building secure,
+            scalable, and high-performance web applications using PHP,
+            Laravel, MySQL, and modern frontend technologies.
+          </p>
+
+          <div class="social-links d-flex mt-4">
+
+            <a target="_blank" href="https://www.facebook.com/share/1E5BPVQEf5/">
+              <i class="bi bi-facebook"></i>
             </a>
 
-            <p>
-              Full Stack Laravel Developer specialized in building secure,
-              scalable, and high-performance web applications using PHP,
-              Laravel, MySQL, and modern frontend technologies.
-            </p>
+            <a target="_blank"
+              href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+              <i class="bi bi-linkedin"></i>
+            </a>
 
-            <div class="social-links d-flex mt-4">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/share/1E5BPVQEf5/"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <!-- <a href="#"><i class="bi bi-instagram"></i></a> -->
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                ><i class="bi bi-linkedin"></i
-              ></a>
+            <a href="https://github.com/Mahmoud2706" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
 
-              <a href="https://github.com/Mahmoud2706" target="_blank">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="https://wa.me/201001679091" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </div>
+            <a href="https://wa.me/201001679091" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+
           </div>
 
-          <!-- LINKS -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html#hero">Home</a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="index.html#resume">Summary</a></li>
-              <li><a href="index.html#services">Services</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- SERVICES -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Backend Development</a></li>
-              <li><a href="#">API Development</a></li>
-              <li><a href="#">Database Design</a></li>
-              <li><a href="#">Performance Optimization</a></li>
-            </ul>
-          </div>
-
-          <!-- CONTACT -->
-          <div
-            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-          >
-            <h4>Contact</h4>
-
-            <p>Beni Suef, Egypt 🇪🇬</p>
-            <p>Available for Freelance Work</p>
-            <p>Remote / Worldwide</p>
-
-            <p class="mt-4">
-              <strong>Phone:</strong> <span>+20 100 167 9091</span>
-            </p>
-
-            <p><strong>Email:</strong> <span>mahmudrefaat7@gmail.com</span></p>
-          </div>
         </div>
+
+        <!-- LINKS -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_navigation_title">Navigation</h4>
+
+          <ul>
+            <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#resume" data-i18n="nav_resume">Summary</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+
+        </div>
+
+        <!-- SERVICES -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_services_title">Services</h4>
+
+          <ul>
+            <li><a data-i18n="service_web">Web Development</a></li>
+            <li><a data-i18n="service_backend">Backend Development</a></li>
+            <li><a data-i18n="service_api">API Development</a></li>
+            <li><a data-i18n="service_database">Database Design</a></li>
+            <li><a data-i18n="service_optimization">Performance
+                Optimization</a></li>
+          </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+
+          <p data-i18n="footer_location">Beni Suef, Egypt 🇪🇬</p>
+          <p data-i18n="footer_status">Available for Freelance Work</p>
+          <p data-i18n="footer_scope">Remote / Worldwide</p>
+
+          <p class="mt-4">
+            <strong data-i18n="footer_phone_label">Phone:</strong>
+            <!-- <span>+20 100 167 9091</span> -->
+          </p>
+
+          <p>
+            <strong data-i18n="footer_email_label">Email:</strong>
+            <span>mahmudrefaat7@gmail.com</span>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="container copyright text-center mt-4">
+
+      <p>
+        © <span>2026</span>
+        <strong class="px-1 sitename" data-i18n="Mahmoud_Refaat">Mahmoud
+          Refaat</strong>
+        <span data-i18n="footer_rights">All Rights Reserved</span>
+      </p>
+
+      <div class="credits" data-i18n="footer_credits">
+        Built with ❤️
       </div>
 
-      <!-- COPYRIGHT -->
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>2026</span>
-          <strong class="px-1 sitename">Mahmoud Refaat</strong>
-          <span>All Rights Reserved</span>
-        </p>
+    </div>
 
-        <div class="credits">Built with ❤️</div>
-      </div>
-    </footer>
+  </footer>
     <!-- Scroll Top -->
     <a
       href="#"
@@ -321,7 +337,173 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+  <script>
+    const resources = {
+      en: {
+        translation: {
+          btn_lang_text: "العربية",
+  project_title: "Rayyan Exchange IQ",
+    project_full_title: "Rayyan Exchange IQ – Digital Exchange Platform",
 
+    category: "FinTech / Web App",
+    category_label: "Category",
+    year: "Year",
+    tech_label: "Tech",
+
+    intro:
+      "A secure digital financial platform designed to simplify money transfers and currency exchange operations.",
+
+    overview_title: "Project Overview",
+    overview_text:
+      "The platform provides a professional system for managing financial transactions, currency rates, and administrative operations efficiently.",
+
+    features_title: "Key Features",
+    feature_1: "Internal & external money transfers",
+    feature_2: "Real-time currency rate updates",
+    feature_3: "Admin dashboard system",
+    feature_4: "Transaction notifications & alerts",
+    feature_5: "User-friendly Arabic interface",
+    feature_6: "Fully responsive design",
+
+    tech_title: "Technologies Used",
+
+    impact_title: "Impact",
+    impact_text:
+      "The platform improves financial transaction speed, accuracy, and provides a secure system for managing exchange operations.",
+
+    project_details: "Project Details",
+    client: "Client",
+    view_project: "View Project",
+          "nav_home": "Home",
+          "nav_about": "About",
+          "nav_resume": "Summary",
+          "nav_services": "Services",
+          "nav_contact": "Contact",
+          nav_resume: "Summary",
+          Mahmoud_Refaat: "Mahmoud Refaat",
+          footer_about_text: "Full Stack Laravel Developer specialized in building secure and scalable web applications.",
+          footer_navigation_title: "Navigation",
+          footer_services_title: "Services",
+          service_web: "Web Development",
+          service_backend: "Backend Development",
+          service_api: "API Development",
+          service_database: "Database Design",
+          service_optimization: "Performance Optimization",
+          footer_contact_title: "Contact",
+          footer_location: "Beni Suef, Egypt 🇪🇬",
+          footer_status: "Available for Freelance Work",
+          footer_scope: "Remote / Worldwide",
+          "footer_phone_label": "Phone : +20 100 167 9091",
+          footer_email_label: "Email:",
+          footer_rights: "All Rights Reserved",
+          footer_credits: "Built with ❤️"
+        }
+      },
+
+      ar: {
+        translation: {
+          btn_lang_text: "English",
+           project_title: "ريان للصرافة",
+    project_full_title: "ريان للصرافة – منصة مالية رقمية",
+
+    category: "تقنيات مالية / تطبيق ويب",
+    category_label: "الفئة",
+    year: "السنة",
+    tech_label: "التقنيات",
+
+    intro:
+      "منصة مالية رقمية آمنة تهدف إلى تسهيل عمليات تحويل الأموال والصرافة.",
+
+    overview_title: "نظرة عامة",
+    overview_text:
+      "توفر المنصة نظام احترافي لإدارة التحويلات المالية وأسعار العملات ولوحة تحكم متقدمة.",
+
+    features_title: "المميزات",
+    feature_1: "تحويلات داخلية وخارجية",
+    feature_2: "تحديث فوري لأسعار العملات",
+    feature_3: "لوحة تحكم للإدارة",
+    feature_4: "إشعارات وتنبيهات",
+    feature_5: "واجهة عربية سهلة الاستخدام",
+    feature_6: "تصميم متجاوب بالكامل",
+
+    tech_title: "التقنيات المستخدمة",
+
+    impact_title: "الأثر",
+    impact_text:
+      "تحسين سرعة ودقة المعاملات المالية وتوفير نظام آمن لإدارة عمليات الصرافة.",
+
+    project_details: "تفاصيل المشروع",
+    client: "العميل",
+    view_project: "عرض المشروع",
+          footer_about_text: "مطور Full Stack Laravel متخصص في بناء تطبيقات ويب قوية وقابلة للتوسع.",
+          footer_navigation_title: "التنقل",
+          footer_services_title: "الخدمات",
+          service_web: "تطوير المواقع",
+          service_backend: "تطوير الباك إند",
+          service_api: "تطوير API",
+          service_database: "تصميم قواعد البيانات",
+          service_optimization: "تحسين الأداء",
+          Mahmoud_Refaat: "محمود رفعت",
+          nav_home: "الرئيسية",
+          nav_about: "من أنا",
+          nav_summary: "ملخص",
+          nav_services: "خدماتي",
+          nav_portfolio: "أعمالي",
+          nav_resume: "ملخص",
+          nav_contact: "تواصل معي",
+          footer_contact_title: "تواصل",
+          footer_location: "بني سويف، مصر 🇪🇬",
+          footer_status: "متاح للعمل الحر",
+          footer_scope: "عن بعد / حول العالم",
+          "footer_phone_label": "الهاتف :9091 167   20100 +",
+          footer_email_label: "البريد الإلكتروني:",
+          footer_rights: "جميع الحقوق محفوظة",
+          footer_credits: "تم التطوير بـ ❤️"
+        }
+      }
+    };
+
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      i18next.init({
+        lng: currentLang,
+        resources
+      }, () => {
+        updateUI();
+      });
+    });
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "ar" : "en";
+
+      i18next.changeLanguage(currentLang, () => {
+        localStorage.setItem("lang", currentLang);
+        updateUI();
+      });
+    }
+
+    function updateUI() {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+
+        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+          el.placeholder = i18next.t(key);
+        } else {
+          el.innerHTML = i18next.t(key);
+        }
+      });
+
+      // مهم جدًا 👇 تحديث زر اللغة
+      const langText = document.getElementById("lang-text");
+      if (langText) {
+        langText.innerText = i18next.t("btn_lang_text");
+      }
+
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+    }
+  </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>

@@ -31,7 +31,7 @@
 <meta property="og:title" content="Mahmoud Refaat | Full Stack Laravel Developer">
 <meta property="og:description" content="Full Stack Laravel Developer specialized in building secure, scalable, and high-performance web applications.">
 <meta property="og:image" content="https://mahmoud2706.github.io/portfolio/assets/img/person/logo4.PNG">
-
+  <script src="https://unpkg.com/i18next@21.6.10/i18next.min.js"></script>
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://mahmoud2706.github.io/portfolio/index.html">
 <meta property="twitter:title" content="Mahmoud Refaat | Full Stack Laravel Developer">
@@ -57,15 +57,19 @@
             alt="Logo"
           />
         </a>
+        <li class="nav-item">
+        <button id="lang-toggler" class="lang-btn" onclick="toggleLanguage()">
+          <i class="bi bi-translate"></i>
+          <span id="lang-text">العربية</span> </button>
+      </li>
       </div>
     </header>
-
 <main class="main">
 
   <!-- TITLE -->
   <div class="page-title light-background">
     <div class="container">
-      <h1>Phy-Learnings App</h1>
+      <h1 data-i18n="phy_title">Phy-Learnings App</h1>
     </div>
   </div>
 
@@ -82,9 +86,7 @@
               {
                 "loop": true,
                 "speed": 600,
-                "autoplay": {
-                  "delay": 4000
-                },
+                "autoplay": { "delay": 4000 },
                 "slidesPerView": 1,
                 "spaceBetween": 0,
                 "effect": "fade",
@@ -96,77 +98,47 @@
               }
             </script>
 
-            <!-- <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/phy1.png" alt="Portfolio Image" class="img-fluid">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/phy2.png" alt="Portfolio Image" class="img-fluid">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/phy3.png" alt="Portfolio Image" class="img-fluid">
-              </div>
-
-              <div class="swiper-slide">
-                <img src="assets/img/portfolio/phy4.png" alt="Portfolio Image" class="img-fluid">
-              </div>
-
-            </div> -->
-
             <div class="swiper-pagination"></div>
           </div>
 
           <!-- CONTENT -->
           <div class="portfolio-content mt-4">
 
-            <h2>Phy-Learnings – Interactive Physics Learning App</h2>
+            <h2 data-i18n="phy_full_title"></h2>
 
             <div class="meta-info">
               <span><i class="bi bi-calendar"></i> 2025</span>
-              <span><i class="bi bi-tag"></i> Mobile App / Education</span>
+              <span><i class="bi bi-tag"></i> <span data-i18n="phy_category"></span></span>
               <span><i class="bi bi-geo"></i> Global</span>
             </div>
 
-            <p>
-              سعيًا لتطوير حلول تعليمية رقمية حديثة، تم إنشاء تطبيق <strong>Phy-Learnings</strong>
-              لتعليم الفيزياء بطريقة تفاعلية تعتمد على الفهم والتطبيق وليس الحفظ فقط.
-            </p>
+            <p data-i18n="phy_intro"></p>
 
-            <h3>Project Overview</h3>
-            <p>
-              تطبيق تعليمي ذكي يدمج بين الأسئلة التفاعلية، الاختبارات، والمحاكاة العلمية
-              لتسهيل فهم المفاهيم الفيزيائية للطلاب بمختلف المستويات.
-            </p>
+            <h3 data-i18n="phy_overview_title"></h3>
+            <p data-i18n="phy_overview_text"></p>
 
-            <h3>Key Features</h3>
+            <h3 data-i18n="phy_features_title"></h3>
             <ul>
-              <li>نظام أسئلة تفاعلي مع نتائج فورية</li>
-              <li>مستويات تعليمية (مبتدئ - متوسط - متقدم)</li>
-              <li>نظام نقاط ومكافآت لتحفيز التعلم</li>
-              <li>شروحات مبسطة للفيزياء مع رسوم توضيحية</li>
-              <li>تتبع تقدم الطالب وتحليل الأداء</li>
-              <li>إشعارات يومية للاختبارات</li>
-              <li>Dark Mode لتجربة مريحة</li>
+              <li data-i18n="phy_f1"></li>
+              <li data-i18n="phy_f2"></li>
+              <li data-i18n="phy_f3"></li>
+              <li data-i18n="phy_f4"></li>
+              <li data-i18n="phy_f5"></li>
+              <li data-i18n="phy_f6"></li>
+              <li data-i18n="phy_f7"></li>
             </ul>
 
-            <h3>Technologies Used</h3>
+            <h3 data-i18n="phy_tech_title"></h3>
             <ul>
-              <li>Laravel API Backend</li>
-              <li>Flutter (Android & iOS)</li>
-              <li>Firebase Authentication</li>
-              <li>Cloud Firestore / MySQL</li>
-              <li>RESTful API Integration</li>
-              <li>Admin Dashboard (Laravel + Vue.js)</li>
+              <li>Laravel API</li>
+              <li>Flutter</li>
+              <li>Firebase</li>
+              <li>MySQL</li>
+              <li>Vue.js Admin</li>
             </ul>
 
-            <h3>Project Impact</h3>
-            <p>
-              التطبيق يهدف إلى تحويل تعلم الفيزياء من تجربة تقليدية إلى تجربة تفاعلية ممتعة
-              تساعد الطلاب على الفهم من خلال التطبيق العملي والاختبارات الذكية.
-            </p>
+            <h3 data-i18n="phy_impact_title"></h3>
+            <p data-i18n="phy_impact_text"></p>
 
           </div>
         </div>
@@ -176,31 +148,29 @@
           <div class="sidebar">
 
             <div class="info-card">
-              <h3>Project Details</h3>
+              <h3 data-i18n="details_title"></h3>
 
               <div class="info-item">
-                <span class="label">Client</span>
+                <span class="label" data-i18n="client"></span>
                 <span class="value">5Star Code</span>
               </div>
 
               <div class="info-item">
-                <span class="label">Category</span>
-                <span class="value">Mobile Learning App</span>
+                <span class="label" data-i18n="category"></span>
+                <span class="value" data-i18n="phy_category"></span>
               </div>
 
               <div class="info-item">
-                <span class="label">Year</span>
+                <span class="label" data-i18n="year"></span>
                 <span class="value">2025</span>
               </div>
 
               <div class="info-item">
-                <span class="label">Tech</span>
+                <span class="label" data-i18n="tech"></span>
                 <span class="value">Flutter, Laravel, Firebase</span>
               </div>
 
-              <a href="#" target="_blank" class="btn-primary">
-                View Project
-              </a>
+              <a href="#" class="btn-primary" data-i18n="view_project"></a>
 
             </div>
 
@@ -213,104 +183,122 @@
 
 </main>
 
+ <footer id="footer" class="footer">
 
-    <footer id="footer" class="footer">
-      <div class="container footer-top">
-        <div class="row gy-4">
-          <!-- ABOUT -->
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <!-- <span class="sitename">Mahmoud Refaat</span> -->
-              <img
-                style="height: 50px"
-                src="assets/img/person/Capture7-removebg-preview.png"
-                alt="MR Code Logo"
-                loading="lazy"
-              />
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <!-- ABOUT -->
+        <div class="col-lg-5 col-md-12 footer-about">
+
+          <a href="index.html" class="logo d-flex align-items-center">
+
+            <img style="height: 50px;" src="assets/img/person/Capture7-removebg-preview.png" alt="MR Code Logo"
+              loading="lazy">
+
+          </a>
+
+          <p data-i18n="footer_about_text">
+            Full Stack Laravel Developer specialized in building secure,
+            scalable, and high-performance web applications using PHP,
+            Laravel, MySQL, and modern frontend technologies.
+          </p>
+
+          <div class="social-links d-flex mt-4">
+
+            <a target="_blank" href="https://www.facebook.com/share/1E5BPVQEf5/">
+              <i class="bi bi-facebook"></i>
             </a>
 
-            <p>
-              Full Stack Laravel Developer specialized in building secure,
-              scalable, and high-performance web applications using PHP,
-              Laravel, MySQL, and modern frontend technologies.
-            </p>
+            <a target="_blank"
+              href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+              <i class="bi bi-linkedin"></i>
+            </a>
 
-            <div class="social-links d-flex mt-4">
-              <a
-                target="_blank"
-                href="https://www.facebook.com/share/1E5BPVQEf5/"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <!-- <a href="#"><i class="bi bi-instagram"></i></a> -->
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/in/mahmoud-refaat-borayck?utm_source=share_via&utm_content=profile&utm_medium=member_android"
-                ><i class="bi bi-linkedin"></i
-              ></a>
+            <a href="https://github.com/Mahmoud2706" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
 
-              <a href="https://github.com/Mahmoud2706" target="_blank">
-                <i class="bi bi-github"></i>
-              </a>
-              <a href="https://wa.me/201001679091" target="_blank">
-                <i class="bi bi-whatsapp"></i>
-              </a>
-            </div>
+            <a href="https://wa.me/201001679091" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+
           </div>
 
-          <!-- LINKS -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Navigation</h4>
-            <ul>
-              <li><a href="index.html#hero">Home</a></li>
-              <li><a href="index.html#about">About</a></li>
-              <li><a href="index.html#resume">Summary</a></li>
-              <li><a href="index.html#services">Services</a></li>
-              <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-          </div>
-
-          <!-- SERVICES -->
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Services</h4>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Backend Development</a></li>
-              <li><a href="#">API Development</a></li>
-              <li><a href="#">Database Design</a></li>
-              <li><a href="#">Performance Optimization</a></li>
-            </ul>
-          </div>
-
-          <!-- CONTACT -->
-          <div
-            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
-          >
-            <h4>Contact</h4>
-
-            <p>Beni Suef, Egypt 🇪🇬</p>
-            <p>Available for Freelance Work</p>
-            <p>Remote / Worldwide</p>
-
-            <p class="mt-4">
-              <strong>Phone:</strong> <span>+20 100 167 9091</span>
-            </p>
-
-            <p><strong>Email:</strong> <span>mahmudrefaat7@gmail.com</span></p>
-          </div>
         </div>
+
+        <!-- LINKS -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_navigation_title">Navigation</h4>
+
+          <ul>
+            <li><a href="#hero" data-i18n="nav_home">Home</a></li>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#resume" data-i18n="nav_resume">Summary</a></li>
+            <li><a href="#services" data-i18n="nav_services">Services</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+
+        </div>
+
+        <!-- SERVICES -->
+        <div class="col-lg-2 col-6 footer-links">
+
+          <h4 data-i18n="footer_services_title">Services</h4>
+
+          <ul>
+            <li><a data-i18n="service_web">Web Development</a></li>
+            <li><a data-i18n="service_backend">Backend Development</a></li>
+            <li><a data-i18n="service_api">API Development</a></li>
+            <li><a data-i18n="service_database">Database Design</a></li>
+            <li><a data-i18n="service_optimization">Performance
+                Optimization</a></li>
+          </ul>
+
+        </div>
+
+        <!-- CONTACT -->
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+
+          <h4 data-i18n="footer_contact_title">Contact</h4>
+
+          <p data-i18n="footer_location">Beni Suef, Egypt 🇪🇬</p>
+          <p data-i18n="footer_status">Available for Freelance Work</p>
+          <p data-i18n="footer_scope">Remote / Worldwide</p>
+
+          <p class="mt-4">
+            <strong data-i18n="footer_phone_label">Phone:</strong>
+            <!-- <span>+20 100 167 9091</span> -->
+          </p>
+
+          <p>
+            <strong data-i18n="footer_email_label">Email:</strong>
+            <span>mahmudrefaat7@gmail.com</span>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="container copyright text-center mt-4">
+
+      <p>
+        © <span>2026</span>
+        <strong class="px-1 sitename" data-i18n="Mahmoud_Refaat">Mahmoud
+          Refaat</strong>
+        <span data-i18n="footer_rights">All Rights Reserved</span>
+      </p>
+
+      <div class="credits" data-i18n="footer_credits">
+        Built with ❤️
       </div>
 
-      <!-- COPYRIGHT -->
-      <div class="container copyright text-center mt-4">
-        <p>
-          © <span>2026</span>
-          <strong class="px-1 sitename">Mahmoud Refaat</strong>
-          <span>All Rights Reserved</span>
-        </p>
+    </div>
 
-        <div class="credits">Built with ❤️</div>
-      </div>
-    </footer>
+  </footer>
     <!-- Scroll Top -->
     <a
       href="#"
@@ -321,7 +309,163 @@
 
     <!-- Preloader -->
     <div id="preloader"></div>
+  <script>
+    const resources = {
+      en: {
+        translation: {
+          btn_lang_text: "العربية",
+          phy_title: "Phy-Learnings App",
+phy_full_title: "Phy-Learnings – Interactive Physics Learning App",
+phy_category: "Mobile App / Education",
+phy_intro: "An interactive physics learning app designed to help students understand concepts through practice instead of memorization.",
 
+phy_overview_title: "Project Overview",
+phy_overview_text: "A smart learning app that combines quizzes, simulations, and interactive lessons to improve physics understanding.",
+
+phy_features_title: "Key Features",
+phy_f1: "Interactive quiz system with instant results",
+phy_f2: "Multi-level learning system",
+phy_f3: "Points and rewards system",
+phy_f4: "Visual physics explanations",
+phy_f5: "Progress tracking and analytics",
+phy_f6: "Daily exam notifications",
+phy_f7: "Dark mode support",
+
+phy_tech_title: "Technologies Used",
+phy_impact_title: "Project Impact",
+phy_impact_text: "Transforms physics learning into an interactive and engaging experience.",
+
+view_project: "View Project",
+details_title: "Project Details",
+          "client": "Client",
+          "category": "Category",
+          "year": "Year",
+          "tech": "Technologies",
+          "nav_home": "Home",
+          "nav_about": "About",
+          "nav_resume": "Summary",
+          "nav_services": "Services",
+          "nav_contact": "Contact",
+          nav_resume: "Summary",
+          Mahmoud_Refaat: "Mahmoud Refaat",
+          footer_about_text: "Full Stack Laravel Developer specialized in building secure and scalable web applications.",
+          footer_navigation_title: "Navigation",
+          footer_services_title: "Services",
+          service_web: "Web Development",
+          service_backend: "Backend Development",
+          service_api: "API Development",
+          service_database: "Database Design",
+          service_optimization: "Performance Optimization",
+          footer_contact_title: "Contact",
+          footer_location: "Beni Suef, Egypt 🇪🇬",
+          footer_status: "Available for Freelance Work",
+          footer_scope: "Remote / Worldwide",
+          "footer_phone_label": "Phone : +20 100 167 9091",
+          footer_email_label: "Email:",
+          footer_rights: "All Rights Reserved",
+          footer_credits: "Built with ❤️"
+        }
+      },
+
+      ar: {
+        translation: {
+          btn_lang_text: "English",
+          phy_title: "تطبيق Phy-Learnings",
+phy_full_title: "Phy-Learnings – تطبيق تعليمي تفاعلي للفيزياء",
+phy_category: "تطبيق موبايل / تعليم",
+phy_intro: "تطبيق يهدف لتعليم الفيزياء بطريقة تفاعلية تعتمد على الفهم والتطبيق بدلاً من الحفظ.",
+
+phy_overview_title: "نظرة عامة",
+phy_overview_text: "تطبيق تعليمي ذكي يجمع بين الاختبارات والدروس التفاعلية والمحاكاة العلمية.",
+
+phy_features_title: "المميزات",
+phy_f1: "نظام أسئلة تفاعلي بنتائج فورية",
+phy_f2: "مستويات تعليمية متعددة",
+phy_f3: "نظام نقاط ومكافآت",
+phy_f4: "شرح بصري للفيزياء",
+phy_f5: "تتبع تقدم الطالب",
+phy_f6: "إشعارات يومية للاختبارات",
+phy_f7: "دعم الوضع الليلي",
+
+phy_tech_title: "التقنيات المستخدمة",
+phy_impact_title: "تأثير المشروع",
+phy_impact_text: "تحويل تعلم الفيزياء إلى تجربة تفاعلية ممتعة وفعالة.",
+
+view_project: "عرض المشروع",
+details_title: "تفاصيل المشروع",
+          "client": "العميل",
+          "category": "الفئة",
+          "year": "السنة",
+          "tech": "التقنيات",
+          footer_about_text: "مطور Full Stack Laravel متخصص في بناء تطبيقات ويب قوية وقابلة للتوسع.",
+          footer_navigation_title: "التنقل",
+          footer_services_title: "الخدمات",
+          service_web: "تطوير المواقع",
+          service_backend: "تطوير الباك إند",
+          service_api: "تطوير API",
+          service_database: "تصميم قواعد البيانات",
+          service_optimization: "تحسين الأداء",
+          Mahmoud_Refaat: "محمود رفعت",
+          nav_home: "الرئيسية",
+          nav_about: "من أنا",
+          nav_summary: "ملخص",
+          nav_services: "خدماتي",
+          nav_portfolio: "أعمالي",
+          nav_resume: "ملخص",
+          nav_contact: "تواصل معي",
+          footer_contact_title: "تواصل",
+          footer_location: "بني سويف، مصر 🇪🇬",
+          footer_status: "متاح للعمل الحر",
+          footer_scope: "عن بعد / حول العالم",
+          "footer_phone_label": "الهاتف :9091 167   20100 +",
+          footer_email_label: "البريد الإلكتروني:",
+          footer_rights: "جميع الحقوق محفوظة",
+          footer_credits: "تم التطوير بـ ❤️"
+        }
+      }
+    };
+
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    document.addEventListener("DOMContentLoaded", () => {
+      i18next.init({
+        lng: currentLang,
+        resources
+      }, () => {
+        updateUI();
+      });
+    });
+
+    function toggleLanguage() {
+      currentLang = currentLang === "en" ? "ar" : "en";
+
+      i18next.changeLanguage(currentLang, () => {
+        localStorage.setItem("lang", currentLang);
+        updateUI();
+      });
+    }
+
+    function updateUI() {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+
+        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+          el.placeholder = i18next.t(key);
+        } else {
+          el.innerHTML = i18next.t(key);
+        }
+      });
+
+      // مهم جدًا 👇 تحديث زر اللغة
+      const langText = document.getElementById("lang-text");
+      if (langText) {
+        langText.innerText = i18next.t("btn_lang_text");
+      }
+
+      document.documentElement.lang = currentLang;
+      document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+    }
+  </script>
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
